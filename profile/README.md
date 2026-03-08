@@ -1,6 +1,6 @@
 Opinionated tools and skills for AI agents -- turning them into disciplined, autonomous engineering assistants.
 
-## Settings
+## Claude Settings
 
 | Repository | Description |
 |---|---|
