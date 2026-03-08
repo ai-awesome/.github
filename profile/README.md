@@ -10,6 +10,7 @@ Opinionated tools and skills for [Claude Code](https://docs.anthropic.com/en/doc
 | [skill-submit-pr](https://github.com/ai-awesome/skill-submit-pr) | `/submit-pr` skill -- automates branching, building, testing, committing, pushing, PR creation, and CI monitoring in a single command. |
 | [skill-publish](https://github.com/ai-awesome/skill-publish) | `/publish` skill -- automates version bumping, release tagging, and pushing to trigger CI-based publishing. |
 | [skill-project-audit](https://github.com/ai-awesome/skill-project-audit) | `/project-audit` skill -- performs a structured six-phase project audit evaluating goal alignment, dependency health, code quality, and produces a prioritized improvement roadmap. |
+| [skill-create-slides](https://github.com/ai-awesome/skill-create-slides) | `/create-slides` skill -- creates Reveal.js + Markdown presentations using the slides.johnsonlee.io framework, with four built-in presentation styles and GitHub Pages deployment. |
 
 ## Getting Started
 
@@ -37,6 +38,10 @@ ln -sf "$(pwd)/skill-publish/SKILL.md" ~/.claude/skills/publish/SKILL.md
 git clone https://github.com/ai-awesome/skill-project-audit.git
 mkdir -p ~/.claude/skills/project-audit
 ln -sf "$(pwd)/skill-project-audit/SKILL.md" ~/.claude/skills/project-audit/SKILL.md
+
+git clone https://github.com/ai-awesome/skill-create-slides.git
+mkdir -p ~/.claude/skills/create-slides
+ln -sf "$(pwd)/skill-create-slides/SKILL.md" ~/.claude/skills/create-slides/SKILL.md
 ```
 
 Or add them as submodules in your dotfiles:
@@ -45,6 +50,7 @@ Or add them as submodules in your dotfiles:
 git submodule add https://github.com/ai-awesome/skill-submit-pr.git ~/.claude/skills/submit-pr
 git submodule add https://github.com/ai-awesome/skill-publish.git ~/.claude/skills/publish
 git submodule add https://github.com/ai-awesome/skill-project-audit.git ~/.claude/skills/project-audit
+git submodule add https://github.com/ai-awesome/skill-create-slides.git ~/.claude/skills/create-slides
 ```
 
 ## Contributing
