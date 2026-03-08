@@ -1,8 +1,6 @@
-# ai-awesome
-
 Opinionated tools and skills for [Claude Code](https://docs.anthropic.com/en/docs/claude-code) -- turning it into a disciplined, autonomous engineering assistant.
 
-## Repositories
+## SKILLs
 
 | Repository | Description |
 |---|---|
