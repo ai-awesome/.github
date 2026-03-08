@@ -1,10 +1,15 @@
-Opinionated tools and skills for [Claude Code](https://docs.anthropic.com/en/docs/claude-code) -- turning it into a disciplined, autonomous engineering assistant.
+Opinionated tools and skills for AI agents -- turning them into disciplined, autonomous engineering assistants.
 
-## Settings & SKILLs
+## Settings
 
 | Repository | Description |
 |---|---|
 | [claude-global-settings](https://github.com/ai-awesome/claude-global-settings) | Global configuration that makes Claude Code act as a planner/coordinator with thinking discipline, TTS hooks, and a dedicated worker agent for implementation tasks. |
+
+## SKILLs
+
+| Repository | Description |
+|---|---|
 | [skill-submit-pr](https://github.com/ai-awesome/skill-submit-pr) | `/submit-pr` skill -- automates branching, building, testing, committing, pushing, PR creation, and CI monitoring in a single command. |
 | [skill-publish](https://github.com/ai-awesome/skill-publish) | `/publish` skill -- automates version bumping, release tagging, and pushing to trigger CI-based publishing. |
 | [skill-audit-project](https://github.com/ai-awesome/skill-audit-project) | `/audit-project` skill -- performs a structured six-phase project audit evaluating goal alignment, dependency health, code quality, and produces a prioritized improvement roadmap. |
