@@ -4,7 +4,7 @@ Opinionated tools and skills for AI agents -- turning them into disciplined, aut
 
 | Repository | Description |
 |---|---|
-| [claude-global-settings](https://github.com/ai-awesome/claude-global-settings) | Global configuration that makes Claude Code act as a planner/coordinator with thinking discipline, TTS hooks, and a dedicated worker agent for implementation tasks. |
+| [.claude](https://github.com/ai-awesome/.claude) | Global configuration that makes Claude Code act as a planner/coordinator with thinking discipline, TTS hooks, and a dedicated worker agent for implementation tasks. |
 
 ## SKILLs
 
@@ -17,43 +17,29 @@ Opinionated tools and skills for AI agents -- turning them into disciplined, aut
 
 ## Getting Started
 
-Install the global settings to configure Claude Code as a planner/coordinator:
+### Fresh install (no existing ~/.claude)
 
 ```sh
-git clone https://github.com/ai-awesome/claude-global-settings.git
-ln -sf "$(pwd)/claude-global-settings/CLAUDE.md" ~/.claude/CLAUDE.md
-ln -sf "$(pwd)/claude-global-settings/settings.json" ~/.claude/settings.json
-ln -sf "$(pwd)/claude-global-settings/agents" ~/.claude/agents
+git clone git@github.com:ai-awesome/.claude.git ~/.claude
 ```
 
-Install skills individually as needed:
+### Existing ~/.claude directory
+
+If you have already run Claude Code, `~/.claude/` already exists. Initialize it as a git repo instead:
 
 ```sh
-# Clone and install skills
-git clone https://github.com/ai-awesome/skill-submit-pr.git
-mkdir -p ~/.claude/skills/submit-pr
-ln -sf "$(pwd)/skill-submit-pr/SKILL.md" ~/.claude/skills/submit-pr/SKILL.md
-
-git clone https://github.com/ai-awesome/skill-publish.git
-mkdir -p ~/.claude/skills/publish
-ln -sf "$(pwd)/skill-publish/SKILL.md" ~/.claude/skills/publish/SKILL.md
-
-git clone https://github.com/ai-awesome/skill-audit-project.git
-mkdir -p ~/.claude/skills/audit-project
-ln -sf "$(pwd)/skill-audit-project/SKILL.md" ~/.claude/skills/audit-project/SKILL.md
-
-git clone https://github.com/ai-awesome/skill-create-slides.git
-mkdir -p ~/.claude/skills/create-slides
-ln -sf "$(pwd)/skill-create-slides/SKILL.md" ~/.claude/skills/create-slides/SKILL.md
+cd ~/.claude
+git init
+git remote add origin git@github.com:ai-awesome/.claude.git
+git fetch origin
+git checkout -b main origin/main
 ```
 
-Or add them as submodules in your dotfiles:
+Skills are included as submodules. After cloning or initializing, run:
 
 ```sh
-git submodule add https://github.com/ai-awesome/skill-submit-pr.git ~/.claude/skills/submit-pr
-git submodule add https://github.com/ai-awesome/skill-publish.git ~/.claude/skills/publish
-git submodule add https://github.com/ai-awesome/skill-audit-project.git ~/.claude/skills/audit-project
-git submodule add https://github.com/ai-awesome/skill-create-slides.git ~/.claude/skills/create-slides
+cd ~/.claude
+git submodule update --init
 ```
 
 ## Contributing
