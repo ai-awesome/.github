@@ -25,9 +25,26 @@ ln -sf "$(pwd)/claude-global-settings/agents" ~/.claude/agents
 Install skills individually as needed:
 
 ```sh
-claude mcp add-skill https://github.com/ai-awesome/skill-submit-pr
-claude mcp add-skill https://github.com/ai-awesome/skill-publish
-claude mcp add-skill https://github.com/ai-awesome/skill-project-audit
+# Clone and install skills
+git clone https://github.com/ai-awesome/skill-submit-pr.git
+mkdir -p ~/.claude/skills/submit-pr
+ln -sf "$(pwd)/skill-submit-pr/SKILL.md" ~/.claude/skills/submit-pr/SKILL.md
+
+git clone https://github.com/ai-awesome/skill-publish.git
+mkdir -p ~/.claude/skills/publish
+ln -sf "$(pwd)/skill-publish/SKILL.md" ~/.claude/skills/publish/SKILL.md
+
+git clone https://github.com/ai-awesome/skill-project-audit.git
+mkdir -p ~/.claude/skills/project-audit
+ln -sf "$(pwd)/skill-project-audit/SKILL.md" ~/.claude/skills/project-audit/SKILL.md
+```
+
+Or add them as submodules in your dotfiles:
+
+```sh
+git submodule add https://github.com/ai-awesome/skill-submit-pr.git ~/.claude/skills/submit-pr
+git submodule add https://github.com/ai-awesome/skill-publish.git ~/.claude/skills/publish
+git submodule add https://github.com/ai-awesome/skill-project-audit.git ~/.claude/skills/project-audit
 ```
 
 ## Contributing
