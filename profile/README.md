@@ -17,29 +17,26 @@ Opinionated tools and skills for AI agents -- turning them into disciplined, aut
 
 ## Getting Started
 
-### Fresh install (no existing ~/.claude)
+### Quick install
+
+```sh
+bash <(curl -fsSL https://raw.githubusercontent.com/ai-awesome/.claude/main/scripts/install.sh)
+```
+
+The install script handles both fresh installs and existing `~/.claude` directories. If conflicting files are detected, it will prompt you to back them up before proceeding.
+
+### Manual install
+
+Clone directly if you don't have `~/.claude` yet:
 
 ```sh
 git clone git@github.com:ai-awesome/.claude.git ~/.claude
 ```
 
-### Existing ~/.claude directory
-
-If you have already run Claude Code, `~/.claude/` already exists. Initialize it as a git repo instead:
+If `~/.claude` already exists, run the install script locally:
 
 ```sh
-cd ~/.claude
-git init
-git remote add origin git@github.com:ai-awesome/.claude.git
-git fetch origin
-git checkout -b main origin/main
-```
-
-Skills are included as submodules. After cloning or initializing, run:
-
-```sh
-cd ~/.claude
-git submodule update --init
+curl -fsSL https://raw.githubusercontent.com/ai-awesome/.claude/main/scripts/install.sh | bash
 ```
 
 ## Contributing
