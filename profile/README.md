@@ -14,6 +14,7 @@ Opinionated tools and skills for AI agents -- turning them into disciplined, aut
 | [skill-publish](https://github.com/ai-awesome/skill-publish) | `/publish` | Automates version bumping, release tagging, and pushing to trigger CI-based publishing. |
 | [skill-audit-project](https://github.com/ai-awesome/skill-audit-project) | `/audit-project` | Performs a structured six-phase project audit evaluating goal alignment, dependency health, code quality, and produces a prioritized improvement roadmap. |
 | [skill-create-slides](https://github.com/ai-awesome/skill-create-slides) | `/create-slides` | Creates Reveal.js + Markdown presentations using the slides.johnsonlee.io framework, with four built-in presentation styles and GitHub Pages deployment. |
+| [skill-always-hungry](https://github.com/ai-awesome/skill-always-hungry) | `/always-hungry` | Scouts the open-source community for improvements to any project, evaluates candidates with automated auditing, and applies what works. |
 
 ## Getting Started
 
